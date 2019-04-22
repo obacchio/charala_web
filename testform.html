@@ -1,0 +1,21 @@
+<html>
+<body>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script src="https://bridge.espar.biz/v1.4.0/form.js"></script>
+<script>
+    var espar_form = { espf: { api_key: "GKl3VPbo2BPvWCgH9NXO4QTBCisqxxEhAmYdHXGT", debug: true } };
+</script>
+<form class="espf">
+お名前<input type="text" name="name"></input><br />
+メールアドレス<input type="text" name="mailaddress"></input><br />
+お問い合わせ内容<input type="text" name="subject"></input><br />
+詳細<textarea name="description" rows="3" cols="30"></textarea><br />
+<input type="button" value="戻る" class="espf-b-back" />
+<input type="button" value="確認" class="espf-b-confirm" />
+<input type="button" value="送信" class="espf-b-submit" />
+</form>
+<div class="[フォームID]-m-success">お問い合わせありがとうございました</div>
+<div class="[フォームID]-m-failure">送信に失敗しました。誠に申し訳ございませんが test [at] test.com にメールにて御連絡下さい</div>
+</body>
+</html>
