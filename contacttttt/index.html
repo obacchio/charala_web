@@ -63,7 +63,7 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 			<script src="https://bridge.espar.biz/v1.4.0/form.js"></script>
 			<script>
-				var espar_form = { espf: { api_key: "GKl3VPbo2BPvWCgH9NXO4QTBCisqxxEhAmYdHXGT", debug: true } };
+				var espar_form = { espf: { api_key: "GKl3VPbo2BPvWCgH9NXO4QTBCisqxxEhAmYdHXGT", debug: false } };
 			</script>
 			
 					<section>
@@ -74,30 +74,28 @@
 								<dl>
 									<dt>COMPANY</dt>
 									<dd><input type="text" name="company" value="" class="espf-required" placeholder="会社名を入力">
-									<div class="form-input-error espf-e-company-required" align="center" valign="top"><font color="red">お手数ですが、会社名をご入力ください</font></div>
+									<div class="form-input-error espf-e-company-required" align="center" valign="top"><font color="red">会社名をご入力ください</font></div>
 									</dd>
 								</dl>
 								<dl>
 									<dt>NAME</dt>
 									<dd><input type="text" name="name" value="" class="espf-required" placeholder="お名前を入力">
-									<div class="form-input-error espf-e-name-required" align="center" valign="top"><font color="red">お手数ですが、お名前をご入力ください</font></div>
+									<div class="form-input-error espf-e-name-required" align="center" valign="top"><font color="red">お名前をご入力ください</font></div>
 									</dd>
 								</dl>
 								<dl>
 									<dt>E-MAIL</dt>
 									<dd>
 										<input type="text" name="mailaddress" value="" class="espf-required espf-email" placeholder="メールアドレスを入力">
-										<div class="form-input-error espf-e-mailaddress-required" align="center" valign="top"><font color="red">お手数ですが、メールアドレスをご入力ください</font></div>
+										<div class="form-input-error espf-e-mailaddress-required" align="center" valign="top"><font color="red">メールアドレスをご入力ください</font></div>
 										<div class="form-input-error espf-e-mailaddress-email" align="center" valign="top"><font color="red">メールアドレスの表記が正しいかご確認ください</font></div>
 									</dd>
 								</dl>
 								<dl>
 									<dt>TEL</dt>
-									<dd><input type="text" name="phonenum" value="" class="espf-required" placeholder="電話番号を入力">
-									<div class="form-input-error espf-e-phonenum-required" align="center" valign="top"><font color="red">お手数ですが、お名前をご入力ください</font></div>
-									</dd>
+									<dd><input type="text" name="phonenum" value="" class="espf-required" placeholder="電話番号を入力"></dd>
 								</dl>
-								<div class="form-input-error espf-e-subject-required" align="center" valign="top"><font color="red">お手数ですが、お問い合わせ項目をご指定ください</font></div>
+								<div class="form-input-error espf-e-subject-required" align="center" valign="top"><font color="red">お問い合わせ項目をご指定ください</font></div>
 								<dl>
 									<dt>SELECT</dt>
 									<dd><select name="subject" class="espf-required">
@@ -112,7 +110,7 @@
 									</select>
 									</dd>
 								</dl>
-								<div class="form-input-error espf-e-desc-required" align="center" valign="top"><font color="red">お手数ですが、お問い合わせ内容をご入力ください</font></div>
+								<div class="form-input-error espf-e-desc-required" align="center" valign="top"><font color="red">お問い合わせ内容をご入力ください</font></div>
 								<dl>
 									<dt>DESCRIPTION</dt>
 									<dd><textarea name="desc" class="espf-required" placeholder="お問合わせ内容を入力"></textarea>
