@@ -226,7 +226,7 @@ sec01
 	height: 100%;
 }
 .list03 li a{
-	text-decoration: underline;
+	//text-decoration: underline;
 }
 .list03 li:nth-child(2) a,
 .list03 li:nth-child(3) a{
@@ -456,9 +456,18 @@ sec04 download
   	background:no-repeat center top;
 	background-size: 100%;
 	width: 100%;
-	height: 25px;
 	display: block;
 	content: "";
+}
+.sec01 ul li.box_l:before,
+.black .customize .table_area:before,
+.sec01 .spec li .spec_area:before{
+	height: 25px;
+}
+.sec01 ul li.box_l:after,
+.black .customize .table_area:after,
+.sec01 .spec li .spec_area:after{
+	height: 40px;
 }
 .sec01 ul li.box_l:before{
 	background-image:url(../../images/contents_bg_top.png);
@@ -512,7 +521,7 @@ sec04 download
 .sec01 ul li.box_l:after,
 .sec01 .spec li .spec_area:after,
 .black .customize .table_area:after{
-	bottom: -25px;
+	bottom: -40px;
 	left: 0;
 }
 
@@ -546,7 +555,7 @@ sec02
 	height: 62px;
 	font-size: 2.6rem;
 	text-align: center;
-	padding: 10px 0;
+	padding: 12px 0;
 	box-sizing: border-box;
 }
 .sec02 ul li p{
