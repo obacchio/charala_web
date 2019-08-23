@@ -224,6 +224,10 @@ nav ul{
 nav ul li{
 	padding-right: 55px;
 }
+nav ul li.phone{
+	display: none;
+	padding-right: 0px;
+}
 nav ul li:last-child{
 	background: url(../../images/nav04_bg.png) no-repeat center;
 	background-size: 100%;
@@ -236,6 +240,9 @@ nav ul li a{
 	position: relative;
 	display: block;
 	padding-top: 18px;
+}
+nav ul li.phone{
+	display: none;
 }
 nav ul li a:before{
 	position: absolute;
@@ -586,6 +593,9 @@ p.aside span{
 	nav ul li{
 		padding-right: 20px !important;
 	}
+	nav ul li.phone{
+		display: inline;
+	}
 	nav ul li:last-child{
 		padding-right: 0 !important;
 	}
@@ -640,6 +650,9 @@ p.aside span{
 		padding:7px 0;
 		text-align: center;
 		padding-right: 0 !important;
+	}
+	nav ul li.phone{
+		display: inline;
 	}
 	nav ul li:last-child{
 		position: relative;
