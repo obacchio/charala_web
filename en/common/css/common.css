@@ -517,6 +517,9 @@ p.aside span{
 	article .inner1100{
 		padding: 0 25px;
 	}
+	nav ul li.phone{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1099px) {
@@ -533,7 +536,7 @@ p.aside span{
 		padding-right: 20px !important;
 	}
 	nav ul li.phone{
-		display: inline;
+		display: none;
 	}
 	nav ul li:last-child{
 		padding-right: 0 !important;

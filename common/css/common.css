@@ -597,7 +597,7 @@ p.aside span{
 		padding-right: 20px !important;
 	}
 	nav ul li.phone{
-		display: inline;
+		display: none;
 	}
 	nav ul li:last-child{
 		padding-right: 0 !important;
