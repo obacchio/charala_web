@@ -578,6 +578,9 @@ p.aside span{
 	article .inner1100{
 		padding: 0 25px;
 	}
+	nav ul li.phone{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1099px) {
