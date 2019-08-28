@@ -578,9 +578,6 @@ p.aside span{
 	article .inner1100{
 		padding: 0 25px;
 	}
-	nav ul li.phone{
-		display: none;
-	}
 }
 
 @media screen and (max-width: 1099px) {
@@ -597,7 +594,7 @@ p.aside span{
 		padding-right: 20px !important;
 	}
 	nav ul li.phone{
-		display: none;
+		display: inline;
 	}
 	nav ul li:last-child{
 		padding-right: 0 !important;
@@ -617,7 +614,7 @@ p.aside span{
 	}
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
 	.sp{
 		display:block;
 	}
@@ -628,7 +625,7 @@ p.aside span{
 	nav{
 		position: fixed;
 		background: #f4ca1d;
-		top:-100% !important;
+		top:-150% !important;
 		height: 100%;
 		width: 100%;
 		left: 0;
