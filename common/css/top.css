@@ -861,6 +861,13 @@ fadein action
 	.list03 h5 span{
 		font-size: 1.8rem;
 	}
+	
+	section.price .tight{
+		display: block;
+	}
+	section.adopt .tight{
+		display: block;
+	}
 }
 @media screen and (max-width: 1099px) {
 	.pc{
@@ -1011,6 +1018,13 @@ fadein action
 	.download .btn .txt18{
 		font-size: 1.5rem;
 		top:5px;
+	}
+	
+	section.price .tight{
+		display: block;
+	}
+	section.adopt .tight{
+		display: block;
 	}
 }
 
