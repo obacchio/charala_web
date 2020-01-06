@@ -861,13 +861,6 @@ fadein action
 	.list03 h5 span{
 		font-size: 1.8rem;
 	}
-	
-	section.price .tight{
-		display: block;
-	}
-	section.adopt .tight{
-		display: block;
-	}
 }
 @media screen and (max-width: 1099px) {
 	.pc{
