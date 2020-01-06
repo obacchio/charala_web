@@ -737,6 +737,18 @@ sec04
 .sec04 ul li h3{
 	font-size: 2.8rem;
 }
+.sec04 ul li div .flt{
+	font-size: 2.8rem;
+	letter-spacing: -10px;
+}
+.sec04 ul li div .ball{
+	font-size: 2.8rem;
+	letter-spacing: -5px;
+}
+.sec04 ul li .jisseki{
+	font-size: 1.5rem;
+	letter-spacing: -0.5px;
+}
 .sec04 ul li .ph{
 	width: 100%;
 	margin: 20px 0;
