@@ -1196,6 +1196,15 @@ fadein action
 	section.adopt .tight{
 		display: block;
 	}
+	
+	section.price .contact{
+		left: 39%;
+		top: 70%;
+	}
+	section.adopt .detail{
+		left: 39%;
+		top: 65%;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -1448,15 +1457,8 @@ fadein action
 	section.price .tight{
 		display: block;
 	}
-	section.price .contact{
-		left: 40%;
-		top: 70%;
-	}
 	section.adopt .tight{
 		display: block;
 	}
-	section.adopt .detail{
-		left: 40%;
-		top: 70%;
-	}
+	
 }
