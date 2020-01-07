@@ -1198,12 +1198,12 @@ fadein action
 	}
 	
 	section.price .contact{
-		left: 39%;
+		left: 55%;
 		top: 70%;
 	}
 	section.adopt .detail{
-		left: 39%;
-		top: 65%;
+		left: 55%;
+		top: 60%;
 	}
 }
 
