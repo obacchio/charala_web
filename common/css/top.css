@@ -1013,23 +1013,24 @@ fadein action
 		top:5px;
 	}
 	
-	
+	section.price .bg{
+		height: 210px;
+	}
+	section.price .contact{
+		left: 50%;
+		right: 50%;
+		top: 160px;
+	}
+	section.adopt .bg{
+		height: 210px;
+	}
 	section.adopt .text{
 		top: 0;
 	}
-	section.price .tight{
-		display: block;
-	}
-	section.adopt .tight{
-		display: block;
-	}
-	section.price .contact{
-		left: 65%;
-		top: 70%;
-	}
 	section.adopt .detail{
-		left: 65%;
-		top: 70%;
+		left: 50%;
+		right: 50%;
+		top: 160px;
 	}
 }
 
