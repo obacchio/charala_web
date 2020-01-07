@@ -1190,6 +1190,9 @@ fadein action
 		padding-top: 17px;
 		margin: 0 auto;
 	}
+	section.adopt .text{
+		top: 0;
+	}
 	section.price .tight{
 		display: block;
 	}
@@ -1198,11 +1201,11 @@ fadein action
 	}
 	
 	section.price .contact{
-		left: 70%;
+		left: 65%;
 		top: 70%;
 	}
 	section.adopt .detail{
-		left: 70%;
+		left: 65%;
 		top: 60%;
 	}
 }
