@@ -1013,11 +1013,23 @@ fadein action
 		top:5px;
 	}
 	
+	
+	section.adopt .text{
+		top: 0;
+	}
 	section.price .tight{
 		display: block;
 	}
 	section.adopt .tight{
 		display: block;
+	}
+	section.price .contact{
+		left: 62%;
+		top: 70%;
+	}
+	section.adopt .detail{
+		left: 62%;
+		top: 70%;
 	}
 }
 
@@ -1189,24 +1201,6 @@ fadein action
 		margin-bottom: 20px;
 		padding-top: 17px;
 		margin: 0 auto;
-	}
-	section.adopt .text{
-		top: 0;
-	}
-	section.price .tight{
-		display: block;
-	}
-	section.adopt .tight{
-		display: block;
-	}
-	
-	section.price .contact{
-		left: 65%;
-		top: 70%;
-	}
-	section.adopt .detail{
-		left: 65%;
-		top: 60%;
 	}
 }
 
@@ -1456,12 +1450,6 @@ fadein action
 	}
 	p.aside {
 		padding-top: 10px;
-	}
-	section.price .tight{
-		display: block;
-	}
-	section.adopt .tight{
-		display: block;
 	}
 	
 }
