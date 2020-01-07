@@ -1448,7 +1448,15 @@ fadein action
 	section.price .tight{
 		display: block;
 	}
+	section.price .contact{
+		left: 40%;
+		top: 70%;
+	}
 	section.adopt .tight{
 		display: block;
+	}
+	section.adopt .detail{
+		left: 40%;
+		top: 70%;
 	}
 }
