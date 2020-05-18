@@ -97,6 +97,12 @@ form
 .form dl dd{
 	width: calc(100% - 140px);
 }
+.form dl div dd{
+	display: block;
+	width: calc(100% - 140px);
+	white-space: nowrap;
+	text-align: left;
+}
 
 .form input,
 .form textarea,
