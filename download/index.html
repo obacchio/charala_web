@@ -40,14 +40,19 @@ function confirmChecked(call){
 	checkLT = document.form.checklt.checked;
 	checkBL = document.form.checkbl.checked;
 	
-	if (checkLT == true && call == "c"){
-		targetLT.innerHTML = "■";
-	}else{
-		targetLT.innerHTML = "";
-	}
-	if (checkBL == true && call == "c"){
-		targetBL.innerHTML = "■";
+	if (call == "c"){
+		if (checkLT == true){
+			targetLT.innerHTML = "■";
+		}else{
+			targetLT.innerHTML = "";
+		}
+		if (checkBL == true){
+			targetBL.innerHTML = "■";
+		} else {
+			targetBL.innerHTML = "";
+		}
 	} else {
+		targetLT.innerHTML = "";
 		targetBL.innerHTML = "";
 	}
 }
