@@ -37,7 +37,7 @@
 		<div class="swich_area">
 			<ul>
 				<li class="on"><a href="./">JP</a></li>
-				<li><a href="../en/contacttttt/">EN</a></li>
+				<li><a href="../en/download/">EN</a></li>
 			</ul>
 		</div>
 	</div>
@@ -56,14 +56,14 @@
 
 <article>
 	<section class="contact fadein">
-		<h2><img src="../images/contact_ttl.svg" alt="お問い合わせ"></h2>
+		<h2><img src="../images/download_ttl_white.svg" alt="ダウンロード"></h2>
 		<div class="inner">
 			
 			<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-			<script src="https://bridge.espar.biz/v1.4.0/form.js"></script>
+			<script src="https://bridge.espar.biz/v1.5.0/form.js"></script>
 			<script>
-				var espar_form = { espf: { api_key: "GKl3VPbo2BPvWCgH9NXO4QTBCisqxxEhAmYdHXGT", debug: false } };
+				var espar_form = { espfDlHandouts: { api_key: "WF24PEhcGmwvEiczZmFKS5ThXkazpbKNQnecbY8h", debug: true }, config_test: true };
 			</script>
 			
 					<section>
@@ -73,22 +73,22 @@
 								
 								<dl>
 									<dt>COMPANY<font color="red">*</font></dt>
-									<dd><input type="text" name="company" value="" class="espf-required" placeholder="会社名を入力">
-									<div class="form-input-error espf-e-company-required" align="center" valign="top"><font color="red">会社名をご入力ください</font></div>
+									<dd><input type="text" name="company" value="" class="espfDlHandouts-required" placeholder="会社名を入力">
+									<div class="form-input-error espfDlHandouts-e-company-required" align="center" valign="top"><font color="red">会社名をご入力ください</font></div>
 									</dd>
 								</dl>
 								<dl>
 									<dt>NAME<font color="red">*</font></dt>
-									<dd><input type="text" name="name" value="" class="espf-required" placeholder="お名前を入力">
-									<div class="form-input-error espf-e-name-required" align="center" valign="top"><font color="red">お名前をご入力ください</font></div>
+									<dd><input type="text" name="name" value="" class="espfDlHandouts-required" placeholder="お名前を入力">
+									<div class="form-input-error espfDlHandouts-e-name-required" align="center" valign="top"><font color="red">お名前をご入力ください</font></div>
 									</dd>
 								</dl>
 								<dl>
 									<dt>E-MAIL<font color="red">*</font></dt>
 									<dd>
-										<input type="text" name="mailaddress" value="" class="espf-required espf-email" placeholder="メールアドレスを入力">
-										<div class="form-input-error espf-e-mailaddress-required" align="center" valign="top"><font color="red">メールアドレスをご入力ください</font></div>
-										<div class="form-input-error espf-e-mailaddress-email" align="center" valign="top"><font color="red">メールアドレスの表記が正しいかご確認ください</font></div>
+										<input type="text" name="mailaddress" value="" class="espfDlHandouts-required espfDlHandouts-email" placeholder="メールアドレスを入力">
+										<div class="form-input-error espfDlHandouts-e-mailaddress-required" align="center" valign="top"><font color="red">メールアドレスをご入力ください</font></div>
+										<div class="form-input-error espfDlHandouts-e-mailaddress-email" align="center" valign="top"><font color="red">メールアドレスの表記が正しいかご確認ください</font></div>
 									</dd>
 								</dl>
 								<dl>
@@ -97,47 +97,49 @@
 								</dl>
 								<dl>
 									<dt>SELECT<font color="red">*</font></dt>
-									<dd><select name="subject" class="espf-required">
-										<option value="" {$selected.default}>お問合わせ項目の選択</option>
-										<option value="ご発注について" {$selected.SELECT.ご発注について}>ご発注について</option>
-										<option value="サービス内容について" {$selected.SELECT.サービス内容について}>サービス内容について</option>
-										<option value="取材のお申込み" {$selected.SELECT.取材のお申込み}>取材のお申込み</option>
-										<option value="BALLSHOOTERSについて" {$selected.SELECT.BALLSHOOTERSについて}>BALLSHOOTERSについて</option>
-										<option value="Flatoonsについて" {$selected.SELECT.Flatoonsについて}>Flatoonsについて</option>
-										<option value="Flatoons-LT-について" {$selected.SELECT.Flatoons-LT-について}>Flatoons-LT-について</option>
-										<option value="その他" {$selected.SELECT.その他}>その他</option>
-									</select>
-									</dd>
+									<div>
+									<dd><label><input type="checkbox" name="dlhandout" value="LT_jp" class="espfDlHandouts-e-dlhandout-required">Flatoons LT（フラットゥーンズ・ライト）</label></dd>
+									<dd><label><input type="checkbox" name="dlhandout" value="BALL_jp">Ball Shooters（ボールシューターズ）</label></dd>
+									</div>
 								</dl>
-								<div class="form-input-error espf-e-subject-required" align="center" valign="top"><font color="red">お問い合わせ項目をご指定ください</font></div>
+								<div align="center" valign="top"><font color="red">ダウンロード資料をご指定ください</font></div>
 								<dl>
-									<dt>DESCRIPTION<font color="red">*</font></dt>
-									<dd><textarea name="desc" class="espf-required" placeholder="お問合わせ内容を入力"></textarea>
+									<dt>DESCRIPTION</dt>
+									<dd><textarea name="desc" class="espfDlHandouts-required" placeholder="お問合わせ内容を入力"></textarea>
 									</dd>
 								</dl>
-								<div class="form-input-error espf-e-desc-required" align="center" valign="top"><font color="red">お問い合わせ内容をご入力ください</font></div>
 							</div>
 							<input type="hidden" name="lang" value="jp"/>
 							<div class="formBtn">
-							<input type="button" value="戻る" class="confirm espf-b-back" />
-							<input type="button" value="確認する" class="confirm espf-b-confirm" />
-							<input type="button" value="送信する" class="confirm espf-b-submit" />
+							<input type="button" value="戻る" class="confirm espfDlHandouts-b-back" />
+							<input type="button" value="確認する" class="confirm espfDlHandouts-b-confirm" onClick="exposeLink();" />
+							<input type="button" value="ダウンロード" class="confirm espfDlHandouts-b-submit" />
 							</div>
 						</div>
 						</form>
 						
-						<div class="espf-m-success">
-						<h3 class="ttl">お問い合わせ<br class="sp">ありがとうございました</h3>
-						<p class="pt40">ただいま確認メールを自動送信いたしました。<br>
-						内容を確認ののち対応いたしますので、しばらくお待ちください。<br>
-						場合により、お返事まで日数がかかることがございます。予めご了承ください。<br>
-						尚、入力していただいた電話番号及びメールアドレスの誤りや、迷惑メールブロック設定などにより<br>
-						ご連絡が取れない場合がございます。<br>
-						数日たっても返信がない場合は、恐れ入りますが再度お問い合わせよりご連絡いただけますよう、お願いいたします。<br><br>
-						お問い合わせ：<a href="mailto:info_charala@charabans.co.jp">info_charala@charabans.co.jp</a></p>
+						<div class="espfDlHandouts-m-success">
+						<h3 class="ttl">資料ご請求<br class="sp">ありがとうございました</h3>
+						<p class="pt40">
+						<script type="text/javascript" language="javascript">
+						<!--
+						function exposeLink(){
+							targetLT = document.getElementById("LThandoutLink");
+							targetBL = document.getElementById("BLhandoutLink");
+							
+							targetLT.innerHTML = "<a href=\"../flatoonslt/pdf/flatoons_LT_catalog.pdf\" download=\"flatoons_LT_catalog.pdf\">Flatoons LT（フラットゥーンズ・ライト）</a>";
+							targetBL.innerHTML = "<a href=\"../ballshooters/pdf/ballshooters_catalog.pdf\" download=\"ballshooters_catalog.pdf\">BALL SHOOTERS（ボールシューターズ）</a>";
+						}
+						-->
+						</script>
+						以下のリンクより、資料をダウンロードいただけます。<br>
+						<div id="LThandoutLink"></div>
+						<div id="BLhandoutLink"></div>
+						資料をご覧いただいた後、ご質問等ございましたら、お気軽に当Webサイトよりお問い合わせください。
+						</p>
 						</div>
-						<div class="espf-m-failure">
-						<p class="pt40">大変申し訳ありませんが、通信異常等により、お問い合わせの送信に失敗いたしました。<br/>
+						<div class="espfDlHandouts-m-failure">
+						<p class="pt40">大変申し訳ありませんが、通信異常等により、資料請求処理に失敗いたしました。<br/>
 						お手数かと存じますが、下記お問い合わせまで、メールにてご連絡をいただけますよう<br/>
 						何卒よろしくお願い申し上げます。<br/>
 						<br/>
