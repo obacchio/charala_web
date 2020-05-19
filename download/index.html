@@ -157,13 +157,16 @@ function confirmChecked(call){
 							checkLT = document.form.checklt.checked;
 							checkBL = document.form.checkbl.checked;
 							
+							tLT = "%3Ca%20class%3D%5C%22underline%5C%22%20href%3D%5C%22..%2Fflatoonslt%2Fpdf%2Fflatoons_LT_catalog.pdf%5C%22%20download%3D%5C%22flatoons_LT_catalog.pdf%5C%22%3E%3Cspan%3EFlatoons%20LT%EF%BC%88%E3%83%95%E3%83%A9%E3%83%83%E3%83%88%E3%82%A5%E3%83%BC%E3%83%B3%E3%82%BA%E3%83%BB%E3%83%A9%E3%82%A4%E3%83%88%EF%BC%89%3C%2Fspan%3E%3C%2Fa%3E";
+							tBL = "%3Ca%20class%3D%5C%22underline%5C%22%20href%3D%5C%22..%2Fballshooters%2Fpdf%2Fballshooters_catalog.pdf%5C%22%20download%3D%5C%22ballshooters_catalog.pdf%5C%22%3E%3Cspan%3EBALL%20SHOOTERS%EF%BC%88%E3%83%9C%E3%83%BC%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%BA%EF%BC%89%3C%2Fspan%3E%3C%2Fa%3E";
+							
 							if (checkLT == true){
-								targetLT.innerHTML = "<a class=\"underline\" href=\"../flatoonslt/pdf/flatoons_LT_catalog.pdf\" download=\"flatoons_LT_catalog.pdf\"><span>Flatoons LT（フラットゥーンズ・ライト）</span></a>";
+								targetLT.innerHTML = decodeURIComponent(tLT);
 							} else {
 								targetLT.innerHTML = "";
 							}
 							if (checkBL == true){
-								targetBL.innerHTML = "<a class=\"underline\" href=\"../ballshooters/pdf/ballshooters_catalog.pdf\" download=\"ballshooters_catalog.pdf\"><span>BALL SHOOTERS（ボールシューターズ）</span></a>";
+								targetBL.innerHTML = decodeURIComponent(tBL);
 							} else {
 								targetBL.innerHTML = "";
 							}
