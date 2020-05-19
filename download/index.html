@@ -120,8 +120,8 @@ function confirmChecked(){
 								<dl>
 									<dt>SELECT<font color="red">*</font></dt>
 									<div>
-									<dd><div id="LThandoutCheck"></div><label><input type="checkbox" id="checklt" name="dlhandout" value="LT_jp" class="espfDlHandouts-required">Flatoons LT（フラットゥーンズ・ライト）</label></dd>
-									<dd><div id="BLhandoutCheck"></div><label><input type="checkbox" id="checkbl" name="dlhandout" value="BALL_jp">Ball Shooters（ボールシューターズ）</label></dd>
+									<dd><nobr><div id="LThandoutCheck"></div><label><input type="checkbox" id="checklt" name="dlhandout" value="LT_jp" class="espfDlHandouts-required">Flatoons LT（フラットゥーンズ・ライト）</label></nobr></dd>
+									<dd><nobr><div id="BLhandoutCheck"></div><label><input type="checkbox" id="checkbl" name="dlhandout" value="BALL_jp">Ball Shooters（ボールシューターズ）</label></nobr></dd>
 									</div>
 								</dl>
 								<div class="form-input-error espfDlHandouts-e-dlhandout-required" align="center" valign="top"><font color="red">ダウンロード資料をご指定ください</font></div>
@@ -153,19 +153,19 @@ function confirmChecked(){
 							checkBL = document.form.checkbl.checked;
 							
 							if (checkLT == true){
-								targetLT.innerHTML = "<a href=\"../flatoonslt/pdf/flatoons_LT_catalog.pdf\" download=\"flatoons_LT_catalog.pdf\">Flatoons LT（フラットゥーンズ・ライト）</a>";
+								targetLT.innerHTML = "<a class=\"underline\" href=\"../flatoonslt/pdf/flatoons_LT_catalog.pdf\" download=\"flatoons_LT_catalog.pdf\">Flatoons LT（フラットゥーンズ・ライト）</a>";
 							} else {
 								targetLT.innerHTML = "";
 							}
 							if (checkBL == true){
-								targetBL.innerHTML = "<a href=\"../ballshooters/pdf/ballshooters_catalog.pdf\" download=\"ballshooters_catalog.pdf\">BALL SHOOTERS（ボールシューターズ）</a>";
+								targetBL.innerHTML = "<a class=\"underline\" href=\"../ballshooters/pdf/ballshooters_catalog.pdf\" download=\"ballshooters_catalog.pdf\">BALL SHOOTERS（ボールシューターズ）</a>";
 							} else {
 								targetBL.innerHTML = "";
 							}
 						}
 						-->
 						</script>
-						<h4>以下のリンクをクリックしていただくと、PDF資料がダウンロードいただけます。</h4>
+						<h5>以下のリンクをクリックしていただくと、PDF資料がダウンロードいただけます。</h5>
 						<div class="handoutdl">
 						<div id="LThandoutLink"></div>
 						<div id="BLhandoutLink"></div>
