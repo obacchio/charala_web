@@ -180,7 +180,13 @@ form
 .contact h3.ttl{
 	font-size: 2.6rem;
 }
-
+.contact .handoutdl{
+	display: block;
+	background-color: #fff;
+	width: 250px;
+	height: 150px;
+	padding: 15px;
+}
 
 
 @media screen and (max-width: 600px) {
