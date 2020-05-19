@@ -41,7 +41,6 @@ function confirmChecked(call){
 	checkBL = document.form.checkbl.checked;
 	
 	if (call == "c"){
-		alert('aa');
 		if (checkLT == true){
 			targetLT.innerHTML = "■";
 		}else{
@@ -127,8 +126,8 @@ function confirmChecked(call){
 								<dl>
 									<dt>SELECT<font color="red">*</font></dt>
 									<div>
-									<dd><label><div id="LThandoutCheck"></div><input type="checkbox" id="checklt" name="dlhandout" value="LT_jp" class="espfDlHandouts-required">Flatoons LT（フラットゥーンズ・ライト）</label></dd>
-									<dd><label><div id="BLhandoutCheck"></div><input type="checkbox" id="checkbl" name="dlhandout" value="BALL_jp">Ball Shooters（ボールシューターズ）</label></dd>
+									<div id="LThandoutCheck"></div><dd><label><input type="checkbox" id="checklt" name="dlhandout" value="LT_jp" class="espfDlHandouts-required">Flatoons LT（フラットゥーンズ・ライト）</label></dd>
+									<div id="BLhandoutCheck"></div><dd><label><input type="checkbox" id="checkbl" name="dlhandout" value="BALL_jp">Ball Shooters（ボールシューターズ）</label></dd>
 									</div>
 								</dl>
 								<div class="form-input-error espfDlHandouts-e-dlhandout-required" align="center" valign="top"><font color="red">ダウンロード資料をご指定ください</font></div>
