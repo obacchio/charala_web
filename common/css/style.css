@@ -336,7 +336,7 @@ form
 	display: block;
 	font-size: 13px;
 }
-.form dl dd .dlcheck{
+.form dl dd label{
 	white-space: nowrap;
 }
 

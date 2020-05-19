@@ -33,19 +33,19 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.2&appId=1536841296599435&autoLogAppEvents=1"></script>
 <script type="text/javascript" language="javascript">
 <!--
-function confirmChecked(){
+function confirmChecked(call){
 	targetLT = document.getElementById("LThandoutCheck");
 	targetBL = document.getElementById("BLhandoutCheck");
 	
 	checkLT = document.form.checklt.checked;
 	checkBL = document.form.checkbl.checked;
 	
-	if (checkLT == true){
+	if (checkLT == true && call == 'c'){
 		targetLT.innerHTML = "■";
 	}else{
 		targetLT.innerHTML = "";
 	}
-	if (checkBL == true){
+	if (checkBL == true && call == 'c'){
 		targetBL.innerHTML = "■";
 	} else {
 		targetBL.innerHTML = "";
@@ -133,8 +133,8 @@ function confirmChecked(){
 							</div>
 							<input type="hidden" name="lang" value="jp"/>
 							<div class="formBtn">
-							<input type="button" value="戻る" class="confirm espfDlHandouts-b-back" />
-							<input type="button" value="確認する" class="confirm espfDlHandouts-b-confirm" onClick="confirmChecked();" />
+							<input type="button" value="戻る" class="confirm espfDlHandouts-b-back" onClick="confirmChecked(n)" />
+							<input type="button" value="確認する" class="confirm espfDlHandouts-b-confirm" onClick="confirmChecked(c);" />
 							<input type="button" value="ダウンロード" class="confirm espfDlHandouts-b-submit" onClick="exposeLink();" />
 							</div>
 						</div>
