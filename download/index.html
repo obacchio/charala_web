@@ -31,6 +31,28 @@
 <body ontouchstart="">
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.2&appId=1536841296599435&autoLogAppEvents=1"></script>
+<script type="text/javascript" language="javascript">
+<!--
+function confirmChecked(){
+	targetLT = document.getElementById("LThandoutCheck");
+	targetBL = document.getElementById("BLhandoutCheck");
+	
+	checkLT = document.form.checklt.checked;
+	checkBL = document.form.checkbl.checked;
+	
+	if (checkLT == true){
+		targetLT.innerHTML = "■";
+	}else{
+		targetLT.innerHTML = "";
+	}
+	if (checkBL == true){
+		targetBL.innerHTML = "■";
+	} else {
+		targetBL.innerHTML = "";
+	}
+}
+-->
+</script>
 <header id="top">
 	<div class="inner">
 		<h1><a href="../"><img src="../images/logo_w.svg" alt="chara.la（キャララ）"></a></h1>
@@ -67,7 +89,7 @@
 			</script>
 			
 					<section>
-						<form class="espfDlHandouts">
+						<form name="form" class="espfDlHandouts">
 						<div class="form">
 							<div class="inner">
 								
@@ -98,8 +120,8 @@
 								<dl>
 									<dt>SELECT<font color="red">*</font></dt>
 									<div>
-									<dd><label><input type="checkbox" name="dlhandout" value="LT_jp" class="espfDlHandouts-required">Flatoons LT（フラットゥーンズ・ライト）</label></dd>
-									<dd><label><input type="checkbox" name="dlhandout" value="BALL_jp">Ball Shooters（ボールシューターズ）</label></dd>
+									<dd><label><input type="checkbox" id="checklt" name="dlhandout" value="LT_jp" class="espfDlHandouts-required">Flatoons LT（フラットゥーンズ・ライト）</label></dd>
+									<dd><label><input type="checkbox" id="checkbl" name="dlhandout" value="BALL_jp">Ball Shooters（ボールシューターズ）</label></dd>
 									</div>
 								</dl>
 								<div class="form-input-error espfDlHandouts-e-dlhandout-required" align="center" valign="top"><font color="red">ダウンロード資料をご指定ください</font></div>
@@ -112,7 +134,7 @@
 							<input type="hidden" name="lang" value="jp"/>
 							<div class="formBtn">
 							<input type="button" value="戻る" class="confirm espfDlHandouts-b-back" />
-							<input type="button" value="確認する" class="confirm espfDlHandouts-b-confirm" />
+							<input type="button" value="確認する" class="confirm espfDlHandouts-b-confirm" onClick="confirmChecked();" />
 							<input type="button" value="ダウンロード" class="confirm espfDlHandouts-b-submit" onClick="exposeLink();" />
 							</div>
 						</div>
@@ -127,8 +149,19 @@
 							targetLT = document.getElementById("LThandoutLink");
 							targetBL = document.getElementById("BLhandoutLink");
 							
-							targetLT.innerHTML = "<a href=\"../flatoonslt/pdf/flatoons_LT_catalog.pdf\" download=\"flatoons_LT_catalog.pdf\">Flatoons LT（フラットゥーンズ・ライト）</a>";
-							targetBL.innerHTML = "<a href=\"../ballshooters/pdf/ballshooters_catalog.pdf\" download=\"ballshooters_catalog.pdf\">BALL SHOOTERS（ボールシューターズ）</a>";
+							checkLT = document.form.checklt.checked;
+							checkBL = document.form.checkbl.checked;
+							
+							if (checkLT == true){
+								targetLT.innerHTML = "<a href=\"../flatoonslt/pdf/flatoons_LT_catalog.pdf\" download=\"flatoons_LT_catalog.pdf\">Flatoons LT（フラットゥーンズ・ライト）</a>";
+							} else {
+								targetLT.innerHTML = "";
+							}
+							if (checkBL == true){
+								targetBL.innerHTML = "<a href=\"../ballshooters/pdf/ballshooters_catalog.pdf\" download=\"ballshooters_catalog.pdf\">BALL SHOOTERS（ボールシューターズ）</a>";
+							} else {
+								targetBL.innerHTML = "";
+							}
 						}
 						-->
 						</script>
