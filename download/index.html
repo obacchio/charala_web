@@ -41,6 +41,7 @@ function confirmChecked(call){
 	checkBL = document.form.checkbl.checked;
 	
 	if (call == "c"){
+		alert('aa');
 		if (checkLT == true){
 			targetLT.innerHTML = "■";
 		}else{
@@ -52,6 +53,7 @@ function confirmChecked(call){
 			targetBL.innerHTML = "";
 		}
 	} else {
+		alert('bb');
 		targetLT.innerHTML = "";
 		targetBL.innerHTML = "";
 	}
