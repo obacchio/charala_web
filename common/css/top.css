@@ -354,6 +354,22 @@ sec01
 	width:68%;
 }
 
+.scene .extra li.beige{
+	background: #ebe6db;
+}
+.scene .extra li.beige span.indetail{
+	font-size: 1.2rem;
+}
+.scene .extra h5{
+	font-size: 3.2rem;
+	letter-spacing: -0.3em;
+	padding: 5px 0;
+	line-height: 2.0;
+}
+.scene .extra li.beige h5.en{
+	letter-spacing: 0em;
+}
+
 /*----------------------------------------
 
 sec01 black
@@ -408,6 +424,363 @@ sec01 black
 .white .sec01 ul li.box_l .box_in p{
 	color: #000;
 }
+
+
+/*----------------------------------------
+
+
+feature
+
+
+----------------------------------------*/
+.feature h2 img{
+	width: 170px;
+	margin: 0 auto;
+}
+.feature ul{
+	padding-bottom: 50px;
+	margin-top: 50px;
+}
+
+.feature ul li.box_l{
+	position: relative;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: center;
+    -ms-justify-content: center;
+	justify-content: center;
+	align-items: center;
+	background-size: 100%;
+	max-width: 600px;
+	margin: 0 auto 50px;
+}
+.feature ul li.box_l:nth-child(2){
+	margin: 0 auto 0;
+}
+
+.feature ul li.box_l .box_in{
+	padding: 30px 0;
+}
+.feature ul li.box_l:nth-child(2) h3 span{
+	color: #f4ca1d;
+}
+.feature ul li.box_l .box_in h3{
+	font-size: 5.0rem;
+	text-align: center;
+	padding: 10px 0 10px;
+}
+.feature ul li.box_l .box_in p{
+	max-width: 650px;
+	margin: 20px auto;
+}
+
+.feature ul li.box{
+	position: relative;
+	width: calc(50% - 40px );
+	max-width: 700px;
+	background: #fff;
+	border-radius: 10px;
+	padding: 50px 40px 30px;
+	box-sizing: border-box;
+}
+.feature ul li.box h4{
+	position: absolute;
+	top:-20px;
+	left: 0;
+	right: 0;
+	font-size: 2.6rem;
+	line-height: 1.0;
+	background: #f4ca1d;
+	padding: 10px 0;
+	width: 650px;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 30px;
+}
+.feature ul li.box p{
+	padding-bottom: 20px;
+	text-align: left;
+}
+.feature ul li.box p:nth-last-of-type(1){
+	padding-bottom: 0;
+}
+
+.feature .list02 li{
+	position: relative;
+	max-width: 750px;
+	width: calc(50% - 11px);
+	padding: 15px;
+	margin: -30px 10px -30px 10px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	opacity: 0;
+	background: #ebe6db;
+}
+.feature .list02 .ph img{
+	width: 100%;
+}
+.feature .list02 .ft img{
+	width: 100%;
+}
+.feature .list02 h5{
+	font-size: 3.2rem;
+	padding: 5px 0;
+	line-height: 1.8;
+}
+.feature .list02 h5 span{
+	position: relative;
+	top:12px;
+	font-size: 2.2rem;
+}
+.feature .list02 h5 span.no_sm{
+	top:0;
+	font-size: 3.2rem;
+}
+.feature .list02 h5 img{
+	position: relative;
+	top:10px;
+	width: 35px;
+	height: 100%;
+}
+
+.feature .list03 li{
+	position: relative;
+	max-width: 360px;
+	width: calc(33.3333% - 11px);
+	padding: 15px;
+	margin: 50px 0px 50px 0px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	opacity: 0;
+}
+.feature .list03 h5{
+	font-size: 3.2rem;
+	padding: 5px 0;
+	line-height: 1.8;
+}
+.feature .list03 h5 span{
+	position: relative;
+	top:12px;
+	font-size: 2.2rem;
+}
+.feature .list03 h5 span.no_sm{
+	top:0;
+	font-size: 3.2rem;
+}
+.feature .list03 h5 img{
+	position: relative;
+	top:10px;
+	width: 35px;
+	height: 100%;
+}
+.feature .list03 li a{
+	//text-decoration: underline;
+}
+.feature .list03 li:nth-child(2) a,
+.feature .list03 li:nth-child(3) a{
+	color: #fbfae9;
+}
+
+.feature .extratouch li:nth-child(1){
+	background: #fbfae9;
+	color: #2c2f30;
+}
+.feature .extratouch li:nth-child(2){
+	background: #e84f4e;
+	color: #fbfae9;
+}
+.feature .extratouch li:nth-child(3){
+	background: #3591a3;
+	color: #fbfae9;
+}
+
+.feature .extra h4,
+.feature .spec h4{
+	color: #fbfae9;
+	font-size: 3.2rem;
+	line-height: 1.0;
+	margin: 0 auto;
+	text-align: center;
+	transform: rotate(-5deg);
+}
+.feature .extratouch h4{
+	color: #fbfae9;
+	font-size: 3.2rem;
+	line-height: 1.0;
+	margin: 0 auto;
+	text-align: center;
+	transform: rotate(-5deg);
+}
+.white .feature .extra h4,
+.white .feature .spec h4{
+	color: #000;
+}
+.white .feature .extratouch h4{
+	color: #000;
+}
+.feature .extra h4,{
+	position:absolute;
+	top:-55px;
+	left: 0;
+	right: 0;
+}
+.feature .spec h4{
+	margin-bottom: 40px;
+}
+.feature .extra h4::before{
+	position: absolute;
+	background: url(../../images/head_ico.png) no-repeat;
+	background-size: 15px;
+	width: 15px;
+	height: 15px;
+	content: "";
+	margin-left: -15px;
+	margin-top: -5px;
+}
+.feature .extra h4 span{
+	position:relative;
+	display: block;
+	top:-45px;
+	font-size: 1.4rem;
+	letter-spacing: 3.5rem;
+}
+
+.feature .extratouch h4{
+	position:absolute;
+	top:-55px;
+	left: 0;
+	right: 0;
+}
+.feature .extratouch h4::before{
+	position: absolute;
+	background: url(../../images/head_ico_b.png) no-repeat;
+	background-size: 15px;
+	width: 15px;
+	height: 15px;
+	content: "";
+	margin-left: -15px;
+	margin-top: -5px;
+}
+.feature .extratouch h4 span{
+	position:relative;
+	display: block;
+	top:-45px;
+	font-size: 1.4rem;
+	letter-spacing: 3.5rem;
+}
+
+.feature .spec{
+	margin: 30px auto 50px;
+}
+.feature .spec li{
+	position: relative;
+	max-width: 522px;
+	width: calc(50% - 50px);
+}
+.feature .spec li h4 sup{
+	position: relative;
+	top:15px;
+	font-size: 1.2rem;
+}
+.feature .spec li .spec_area{
+	position: relative;
+	background: url(../../images/spec_bg_black.png) repeat-y center top;
+	background-size: 100%;
+	color: #fff;
+	//margin-bottom: 20px;
+}
+.white .feature .spec li .spec_area{
+	background: url(../../images/spec_bg_white.png) repeat-y center top;
+	background-size: 100%;
+	color: #000;
+}
+.feature .spec li:nth-child(1) .spec_area{
+	left: -10px;
+}
+.feature .spec li .spec_area dl{
+	padding: 30px;
+	flex-wrap: wrap;
+}
+.feature .spec li .spec_area dl dt{
+	position: relative;
+	width: 32%;
+	box-sizing: border-box;
+	line-height: 2.0;
+}
+.feature .spec li .spec_area dl dt span{
+	position: relative;
+	top:7px;
+	font-size: 1.0rem;
+}
+.feature .spec li .spec_area dl dt:after{
+	position:absolute;
+	content: ":";
+	right: 30px;
+}
+.feature .spec li .spec_area dl dd{
+	line-height: 2.0;
+	width:68%;
+}
+
+/*----------------------------------------
+
+feature black
+
+----------------------------------------*/
+.black .fv {
+  	background: none;
+}
+.black .fv .anime_area{
+	max-width: 1120px;
+	max-height: 630px;
+}
+.black section h2{
+	background: none;
+}
+.black .feature h2{
+	margin-top:30px;
+	margin-bottom: 60px;
+}
+.black .feature ul{
+	padding-bottom: 0;
+}
+.black .feature ul{
+	padding-bottom: 0;
+}
+.black .feature ul.extra{
+	padding-bottom: 50px;
+}
+.black .feature ul.extratouch{
+	padding-bottom: 50px;
+}
+
+.black .feature .inner,
+.black .scene .inner{
+	max-width: 1134px;
+}
+
+.black .feature ul li.box_l{
+	position: relative;
+	background-image:url(../../images/contents_bg_black.png);
+	max-width: 654px;
+	left: -7px;
+}
+.white .feature ul li.box_l{
+	background-image:url(../../images/contents_bg_white.png);
+}
+
+.black .feature ul li.box_l .box_in p{
+	color: #fff;
+	max-width: 600px;
+	font-size: 2.0rem;
+	width: 90%;
+	margin: 10px auto;
+}
+.white .feature ul li.box_l .box_in p{
+	color: #000;
+}
+/*--- feature ---*/
 
 /*----------------------------------------
 
@@ -528,9 +901,21 @@ sec04 download
 	display: block;
 	content: "";
 }
+.feature .spec li .spec_area:before,
+.feature .spec li .spec_area:after{
+	position: absolute;
+  	background:no-repeat center top;
+	background-size: 100%;
+	width: 100%;
+	display: block;
+	content: "";
+}
 .sec01 ul li.box_l:before,
 .black .customize .table_area:before,
 .sec01 .spec li .spec_area:before{
+	height: 25px;
+}
+.feature .spec li .spec_area:before{
 	height: 25px;
 }
 .sec01 ul li.box_l:after,
@@ -538,6 +923,10 @@ sec04 download
 .sec01 .spec li .spec_area:after{
 	height: 40px;
 }
+.feature .spec li .spec_area:after{
+	height: 40px;
+}
+
 .sec01 ul li.box_l:before{
 	background-image:url(../../images/contents_bg_top.png);
 }
@@ -574,6 +963,12 @@ sec04 download
 .white .sec01 .spec li .spec_area:after{
 	background-image: url(../../images/spec_bg_bottom_white.png);
 }
+.white .feature .spec li .spec_area:before{
+	background-image: url(../../images/spec_bg_top_white.png);
+}
+.white .feature .spec li .spec_area:after{
+	background-image: url(../../images/spec_bg_bottom_white.png);
+}
 .white .customize .table_area:before {
   	background-image:url(../../images/customize_bg_top_white.png);
 }
@@ -590,6 +985,14 @@ sec04 download
 .sec01 ul li.box_l:after,
 .sec01 .spec li .spec_area:after,
 .black .customize .table_area:after{
+	bottom: -40px;
+	left: 0;
+}
+.feature .spec li .spec_area:before{
+	top: -25px;
+	left: 0;
+}
+.feature .spec li .spec_area:after{
 	bottom: -40px;
 	left: 0;
 }
@@ -857,6 +1260,7 @@ fadein action
 .sec02 ul li,
 .sec04 ul li,
 .sec01 .extra li,
+.feature .extra li,
 .scene .extra li,
 .spec li{
 	opacity: 0;
@@ -872,6 +1276,26 @@ fadein action
 		font-size: 2.8rem;
 	}
 	.list03 h5 span{
+		font-size: 1.8rem;
+	}
+	.feature .list02 h5 img{
+		top:5px;
+		width: 30px;
+	}
+	.feature .list02 h5{
+		font-size: 2.8rem;
+	}
+	.feature .list02 h5 span{
+		font-size: 1.8rem;
+	}
+	.feature .list03 h5 img{
+		top:5px;
+		width: 30px;
+	}
+	.feature .list03 h5{
+		font-size: 2.8rem;
+	}
+	.feature .list03 h5 span{
 		font-size: 1.8rem;
 	}
 }
@@ -893,6 +1317,16 @@ fadein action
 		width: calc(50% - 15px );
 	}
 	.sec01 .spec li{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.feature .spec{
+		display: block !important;
+		width: 100% !important;
+		max-width: 522px;
+		margin: 0 auto;
+	}
+	.feature .spec li{
 		width: 100%;
 		margin-bottom: 40px;
 	}
@@ -938,6 +1372,11 @@ fadein action
 		max-width: 654px !important;
 		margin: 0 auto;
 	}
+	.feature .spec,
+	.feature .spec li{
+		max-width: 654px !important;
+		margin: 0 auto;
+	}
 	.black .customize .table_area,
 	.black .sec01 .spec li .spec_area{
 		background-image:url(../../images/contents_bg_black.png) !important;
@@ -962,6 +1401,15 @@ fadein action
 	.white .sec01 .spec li .spec_area:after{
 		background-image:url(../../images/contents_bg_bottom_white.png) !important;
 	}
+	.white .feature .spec li .spec_area{
+		background-image:url(../../images/contents_bg_white.png) !important;
+	}
+	.white .feature .spec li .spec_area:before{
+		background-image:url(../../images/contents_bg_top_white.png) !important;
+	}
+	.white .feature .spec li .spec_area:after{
+		background-image:url(../../images/contents_bg_bottom_white.png) !important;
+	}
 
 	/*----------------------------------------
 
@@ -984,6 +1432,23 @@ fadein action
 		line-height: 1.8;
 	}
 	.sec01 .spec li .spec_area dl dd{
+		padding-bottom: 10px;
+	}
+	
+	.feature .spec li{
+		left: -7px;
+	}
+	.feature .spec li:nth-child(1){
+		margin-bottom: 40px;
+	}
+	.feature .spec li .spec_area dl{
+		padding: 15px 30px;
+	}
+	.feature .spec li .spec_area dl dt,
+	.feature .spec li .spec_area dl dd{
+		line-height: 1.8;
+	}
+	.feature .spec li .spec_area dl dd{
 		padding-bottom: 10px;
 	}
 
@@ -1118,7 +1583,7 @@ fadein action
 	.sec01 ul li,
 	.list03 li{
 		width: 100%;
-		max-width: 630px;
+		max-width: 430px;
 		margin-left:auto;
 		margin-right: auto;
 		margin-bottom: 90px;
@@ -1145,11 +1610,16 @@ fadein action
 	.list03 li:last-child{
 		margin-bottom: 0 !important;
 	}
-	.sec01 .extra h4, .sec01 .spec h4 {
+	.sec01 .extra h4, .feature .extratouch h4, .sec01 .spec h4, .feature .spec h4 {
 		font-size: 2.4rem;
 		top: -40px;
 	}
 	.sec01 .extra h4 span {
+		top: -40px;
+		font-size: 1.3rem;
+		letter-spacing: 2.5rem;
+	}
+	.feature .extratouch h4 span {
 		top: -40px;
 		font-size: 1.3rem;
 		letter-spacing: 2.5rem;
@@ -1162,6 +1632,69 @@ fadein action
 		margin: 0 auto;
 		margin-bottom: 40px;
 	}
+	
+	.feature .list02 {
+		display: block !important;
+	}
+	.feature .list02 li{
+		width: 100%;
+		max-width: 430px;
+		margin-left:auto;
+		margin-right: auto;
+		margin-bottom: 90px;
+	}
+	.feature .list02 h5 {
+		font-size: 2.6rem;
+	}
+	.feature .list02 h5 img {
+		top: 2px;
+		width: 30px;
+	}
+	.feature .list02 h5 span {
+		top: 7px;
+		font-size: 1.8rem;
+	}
+	.feature .list02 h5 span.no_sm{
+		top:0;
+		font-size: 2.6rem;
+	}
+	.feature .list02 li{
+		margin-bottom: 60px;
+	}
+	.feature .list02 li:last-child{
+		margin-bottom: 0 !important;
+	}
+	.feature .list03 {
+		display: block !important;
+	}
+	.feature .list03 li{
+		width: 100%;
+		max-width: 430px;
+		margin-left:auto;
+		margin-right: auto;
+		margin-bottom: 90px;
+	}
+	.feature .list03 h5 {
+		font-size: 2.6rem;
+	}
+	.feature .list03 h5 img {
+		top: 2px;
+		width: 30px;
+	}
+	.feature .list03 h5 span {
+		top: 7px;
+		font-size: 1.8rem;
+	}
+	.feature .list03 h5 span.no_sm{
+		top:0;
+		font-size: 2.6rem;
+	}
+	.feature .list03 li{
+		margin-bottom: 60px;
+	}
+	.feature .list03 li:last-child{
+		margin-bottom: 0 !important;
+	}
 	/*----------------------------------------
 
 	spec
@@ -1169,6 +1702,10 @@ fadein action
 	----------------------------------------*/
 	.sec01 .spec li:nth-child(1) .spec_area {
 		left: 5px;
+	}
+	.feature .spec li:nth-child(1) .spec_area {
+		left: 5px;
+		margin-bottom: 15px;
 	}
 	
 	/*----------------------------------------
@@ -1255,10 +1792,20 @@ fadein action
 	.white .sec01 .spec li .spec_area:after{
 		background-image:url(../../images/content_bg_bottom_sp.png) !important;
 	}
+	.white .feature .spec li .spec_area{
+		background-image:url(../../images/content_bg_sp.png) !important;
+	}
+	.white .feature .spec li .spec_area:before{
+		background-image:url(../../images/content_bg_top_sp.png) !important;
+	}
+	.white .feature .spec li .spec_area:after{
+		background-image:url(../../images/content_bg_bottom_sp.png) !important;
+	}
 	.sec01 ul li,
 	.sec02 ul li,
 	.sec04 ul li,
 	.sec01 .extra li,
+	.feature .extratouch li,
 	.scene .extra li,
 	.spec li{
 			opacity: 1;
@@ -1274,6 +1821,9 @@ fadein action
 		padding-bottom: 0;
 	}
 	.sec01 .spec li h4 sup {
+		top: 7px;
+	}
+	.feature .spec li h4 sup {
 		top: 7px;
 	}
 	.movie {
@@ -1333,6 +1883,9 @@ fadein action
 	.black .sec01 ul.extra{
 		padding-bottom: 0;
 	}
+	.black .feature ul.extratouch{
+		padding-bottom: 0;
+	}
 	.sec01 .spec li .spec_area dl {
 		display: block;
 		padding: 0 30px;
@@ -1353,6 +1906,29 @@ fadein action
 	}
 	.sec01 .spec li .spec_area dl dd:last-child {
 		padding-bottom: 0;
+	}
+	.feature .spec li .spec_area dl {
+		display: block;
+		padding: 0 30px;
+	}
+	.feature .spec li .spec_area dl dd{
+		width: 100%;
+		line-height: 1.6;
+		padding-bottom: 20px;
+	}
+	.feature .spec li .spec_area dl dt {
+		border-bottom: 1px solid #d5d4d4;
+		padding-bottom: 5px;
+		margin-bottom: 5px;
+	}
+	.feature .spec li .spec_area dl dt::after {
+		display: none;
+	}
+	.feature .spec li .spec_area dl dd:last-child {
+		padding-bottom: 0;
+	}
+	.feature .spec li {
+		margin-bottom: 30px;
 	}
 	.sec02 ul {
 		padding: 30px 0;
@@ -1389,6 +1965,9 @@ fadein action
 	}
 	.black .sec01 .spec li .spec_area,
 	.white .sec01 .spec li .spec_area{
+		left: 0;
+	}
+	.white .feature .spec li .spec_area{
 		left: 0;
 	}
 	.sec03 dl dt {
@@ -1464,6 +2043,14 @@ fadein action
 	}
 	p.aside {
 		padding-top: 10px;
+	}
+	
+	.black .feature .list03 li,
+	.white .feature .list03 li{
+		margin-bottom: 30px;
+	}
+	.feature .list03 h5 {
+		padding: 10px 0;
 	}
 	
 }
