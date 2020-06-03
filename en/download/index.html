@@ -38,20 +38,26 @@
 function confirmChecked(call){
 	targetLT = document.getElementById("LThandoutCheck");
 	targetBL = document.getElementById("BLhandoutCheck");
+	footLT = document.getElementById("LThandoutCheckFt");
+	footBL = document.getElementById("BLhandoutCheckFt");
 	
 	checkLT = document.form.checklt.checked;
 	checkBL = document.form.checkbl.checked;
 	
 	if (call == "c"){
 		if (checkLT == true){
-			targetLT.innerHTML = "v ";
+			targetLT.innerHTML = "<b>";
+			footLT.innerHTML = "</b>";
 		}else{
-			targetLT.innerHTML = "";
+			targetLT.innerHTML = "<s>";
+			footLT.innerHTML = "</s>";
 		}
 		if (checkBL == true){
-			targetBL.innerHTML = "v ";
+			targetBL.innerHTML = "<b>";
+			footBL.innerHTML = "</b>";
 		} else {
-			targetBL.innerHTML = "";
+			targetBL.innerHTML = "<s>";
+			footBL.innerHTML = "</s>";
 		}
 	} else {
 		targetLT.innerHTML = "";
@@ -129,8 +135,8 @@ function confirmChecked(call){
 								<dl>
 									<dt>SELECT<font color="red">*</font></dt>
 									<div style="width:250px;">
-									<dd><label><span id="LThandoutCheck"></span><input type="checkbox" id="checklt" name="dlhandout" value="LT_en" class="espfDlHandouts-required">Flatoons LT</label></dd>
-									<dd><label><span id="BLhandoutCheck"></span><input type="checkbox" id="checkbl" name="dlhandout" value="BALL_en">BALL SHOOTERS</label></dd>
+									<dd><label><span id="LThandoutCheck"></span><input type="checkbox" id="checklt" name="dlhandout" value="LT_en" class="espfDlHandouts-required">Flatoons LT<span id="LThandoutCheckFt"></span></label></dd>
+									<dd><label><span id="BLhandoutCheck"></span><input type="checkbox" id="checkbl" name="dlhandout" value="BALL_en">BALL SHOOTERS<span id="BLhandoutCheckFt"></span></label></dd>
 									</div>
 								</dl>
 								<div class="form-input-error espfDlHandouts-e-subject-required" align="center" valign="top"><font color="red">Missing required items</font></div>
