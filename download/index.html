@@ -36,26 +36,20 @@
 function confirmChecked(call){
 	targetLT = document.getElementById("LThandoutCheck");
 	targetBL = document.getElementById("BLhandoutCheck");
-	footLT = document.getElementById("LThandoutCheckFt");
-	footBL = document.getElementById("BLhandoutCheckFt");
 	
 	checkLT = document.form.checklt.checked;
 	checkBL = document.form.checkbl.checked;
 	
 	if (call == "c"){
 		if (checkLT == true){
-			targetLT.innerHTML = "<b>";
-			footLT.innerHTML = "</b>";
+			targetLT.innerHTML = "<img src='../images/check.png'>";
 		}else{
-			targetLT.innerHTML = "<s>";
-			footLT.innerHTML = "</s>";
+			targetLT.innerHTML = "<img src='../images/noncheck.png'>";
 		}
 		if (checkBL == true){
-			targetBL.innerHTML = "<b>";
-			footBL.innerHTML = "</b>";
+			targetBL.innerHTML = "<img src='../images/check.png'>";
 		} else {
-			targetBL.innerHTML = "<s>";
-			footBL.innerHTML = "</s>";
+			targetBL.innerHTML = "<img src='../images/noncheck.png'>";
 		}
 	} else {
 		targetLT.innerHTML = "";
@@ -133,8 +127,8 @@ function confirmChecked(call){
 								<dl>
 									<dt>SELECT<font color="red">*</font></dt>
 									<div>
-									<dd><label><span id="LThandoutCheck"></span><input type="checkbox" id="checklt" name="dlhandout" value="LT_jp" class="espfDlHandouts-required">Flatoons LT（フラットゥーンズ・ライト）<span id="LThandoutCheckFt"></span></label></dd>
-									<dd><label><span id="BLhandoutCheck"></span><input type="checkbox" id="checkbl" name="dlhandout" value="BALL_jp">Ball Shooters（ボールシューターズ）<span id="BLhandoutCheckFt"></span></label></dd>
+									<dd><label><span id="LThandoutCheck"></span><input type="checkbox" id="checklt" name="dlhandout" value="LT_jp" class="espfDlHandouts-required">Flatoons LT（フラットゥーンズ・ライト）</label></dd>
+									<dd><label><span id="BLhandoutCheck"></span><input type="checkbox" id="checkbl" name="dlhandout" value="BALL_jp">Ball Shooters（ボールシューターズ）</label></dd>
 									</div>
 								</dl>
 								<div class="form-input-error espfDlHandouts-e-dlhandout-required" align="center" valign="top"><font color="red">ダウンロード資料をご指定ください</font></div>
