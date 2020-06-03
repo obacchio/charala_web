@@ -35,6 +35,11 @@ p.blue.aside {
     top: 4px;
     font-size: 1.2rem;
 }
+.lesp-en0 {
+	letter-spacing: 0px !important;
+	line-height: 1.5 !important;
+}
+
 @media screen and (min-width: 601px) {
 	.sec01 .spec li .spec_area dl dt,
 	.sec01 .spec li .spec_area dl dd{
